@@ -1,0 +1,25 @@
+{
+  "name": "twsocials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QueenWoofie/TWSocials.git"
+  },
+  "keywords": [],
+  "author": "QueenWoofie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QueenWoofie/TWSocials/issues"
+  },
+  "homepage": "https://github.com/QueenWoofie/TWSocials#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
