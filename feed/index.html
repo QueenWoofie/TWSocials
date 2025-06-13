@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js" defer></script>
+    <title>TWSocial Feed</title>
+</head>
+<body class="bg-green-100 items-center justify-center flex flex-col min-h-screen">
+    <header class="text-black">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center flex-col gap-2">
+            <h1 class="text-xl font-bold">TWSocials</h1>
+            <nav class="hidden md:flex gap-6">
+                <a href="/index.html" class="hover:underline">Home</a>
+                <a href="/feed/index.html" class="hover:underline">Feed</a>
+                <a href="/profile/index.html" class="hover:underline">Profile</a>
+            </nav>
+
+            <!-- Phone Nav -->
+            <button class="md:hidden" id="menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            </div>
+
+        <div class="md:hidden px-4 pb-4 flex flex-col items-center hidden" id="mobile-menu">
+            <a href="/index.html" class="block py-1">Home</a>
+            <a href="/feed/index.html" class="block py-1">Feed</a>
+            <a href="/profile/index.html" class="block py-1">Profile</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Filter -->
+        <section class="flex flex-col sm:flex-row justify-between gap-4">
+            <input type="text" placeholder="Search posts..."
+                class="px-4 py-2 border rounded w-full sm:w-1/2" />
+            <select class="px-4 py-2 border rounded">
+                <option>Newest</option>
+                <option>Oldest</option>
+            </select>
+        </section>
+
+        <!-- Form -->
+        <form class="bg-white p-4 rounded shadow space-y-4">
+            <textarea placeholder="What's on your mind?"
+                    class="w-full border p-3 rounded resize-none"></textarea>
+            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 hover:font-bold">
+            Post
+            </button>
+        </form>
+
+        <!-- Feed -->
+        <section class="max-w-lg mx-auto w-full mt-6 grid gap-6">
+            <article class="bg-white rounded shadow p-4">
+                <img src="https://www.gilde.no/assets/images/_heroimage/umami-burger.jpg" alt="Post image" class="rounded mb-4 w-full h-auto mx-auto">
+                <p>Weekend vibes - cheat day as they call it!</p>
+            </article>
+            <article class="bg-white rounded shadow p-4">
+                <img src="https://www.gajdnddice.com/cdn/shop/files/Black_red-2.jpg?v=1701616115" alt="Post image" class="rounded mb-4 w-full h-auto mx-auto">
+                <p>DICE GOBLIN MODE INITIATED!</p>
+            </article>
+            <article class="bg-white rounded shadow p-4">
+                <img src="https://mclaren.bloomreach.io/delivery/resources/content/gallery/mclaren-racing/formula-1/2025/nsr/f1-75-live-m/web/mcl39-papaya-pr-inline-1.jpg" alt="Post image" class="rounded mb-4 w-full h-auto mx-auto">
+                <p>McLaren on top 2025 - The F1 team does not seem willing to give up last years title of constructors world champion up without a fight. They came in swinging hard at season start!</p>
+            </article>
+            <article class="bg-white rounded shadow p-4">
+                <img src="https://people.com/thmb/A786fbYOSMFwHZHM863MgQWJuoU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(722x210:724x212)/tate-mcrae-iheart-radio-tout-0401124-4efd6373a8534cf3a6a05f3afefcac21.jpg" alt="Post image" class="rounded mb-4 w-full h-auto mx-auto">
+                <p>Tate McRae rocking the papaya orange!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="text-center text-gray-500 mt-6">
+        <p class="text-center text-sm">&copy; 2025 - Assignment by Noroff - Made by QueenWoofie, Front-End Dev Student</p>
+    </footer>
+</body>
+</html>

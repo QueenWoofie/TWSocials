@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./index.html",
     "./feed/**/*.html",
-    "./profile/**/*.html"
+    "./profile/**/*.html",
     "./**/*.{html,js}",
     "!./node_modules/**/*"
   ],

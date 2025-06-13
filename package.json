@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/QueenWoofie/TWSocials#readme",
   "devDependencies": {
+    "prettier": "^3.5.3",
     "tailwindcss": "^3.4.17"
   }
 }
