@@ -5,11 +5,10 @@ module.exports = {
     "./feed/**/*.html",
     "./profile/**/*.html",
     "./**/*.{html,js}",
-    "!./node_modules/**/*"
+    "!./node_modules/**/*",
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
-
+};
