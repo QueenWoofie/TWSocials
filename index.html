@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <title>TWSocial Login</title>
 </head>
-<body>
-    
+<body class="bg-green-100 items-center justify-center flex flex-col min-h-screen">
+    <header class="text-black">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center flex-col gap-2">
+            <h1 class="text-xl font-bold">TWSocials</h1>
+            <nav class="hidden md:flex gap-6">
+                <a href="index.html" class="hover:underline">Home</a>
+                <a href="feed/index.html" class="hover:underline">Feed</a>
+                <a href="profile/index.html" class="hover:underline">Profile</a>
+            </nav>
+
+            <!-- Phone Nav -->
+            <button class="md:hidden" id="menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            </div>
+
+        <div class="md:hidden px-4 pb-4 flex flex-col items-center hidden" id="mobile-menu">
+            <a href="index.html" class="block py-1">Home</a>
+            <a href="feed/index.html" class="block py-1">Feed</a>
+            <a href="profile/index.html" class="block py-1">Profile</a>
+        </div>
+    </header>
+
+    <main>
+        <form action="profile/index.html" method="GET" class="bg-white p-6 rounded-lg shadow-md w-full max-w-md space-y-6">
+            <h2 class="text-2xl font-bold text-center">Login</h2>
+
+            <div>
+            <label for="email" class="block font-medium">Email</label>
+            <input required type="email" id="email" name="email"
+                class="mt-1 w-full border rounded px-3 py-2" />
+            </div>
+
+            <div>
+            <label for="password" class="block font-medium">Password</label>
+            <input required minlength="8" type="password" id="password" name="password"
+                class="mt-1 w-full border rounded px-3 py-2" />
+            <small class="text-gray-500">Minimum 8 characters</small>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 hover:font-bold">
+            Login
+            </button>
+        </form>
+    </main>
+
+    <footer class="text-center text-gray-500 mt-6">
+        <p class="text-center text-sm">&copy; 2025 - Assignment by Noroff - Made by QueenWoofie, Front-End Dev Student</p>
+    </footer>
 </body>
 </html>
